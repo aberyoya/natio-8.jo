@@ -1,0 +1,355 @@
+*ボディー部分の背景*/
+body {
+    background: linear-gradient(-45deg, rgba(102,255,255, .8),
+    rgba(102,255,204, .8)) fixed,
+    url(http://frestocks.com/wp-content/uploads/2015/12/s-DSC_8612.jpg) fixed;
+    background-size: cover;
+}
+
+/*全体の体裁*/
+.main {
+  text-align: center;
+}
+
+/*タイトルの部分*/
+.title {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+  background: ;
+  margin-top: 270px;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
+/*浮き出し文字*/
+.show {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  letter-spacing: 15px;
+  background:;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  margin-top: 330px;
+}
+
+
+/*メインの部分、紹介文*/
+.show-box {
+  background-color: rgba(255,255,255,0.7);
+　width: 400px;
+  height: 800px;
+  margin: 200px;
+  padding-top: 50px;
+  color: rgba(0,0,0,0.6);
+  position:relative;
+  z-index: 3600;
+
+}
+.show-box-text {
+  font-size: 15px;
+
+}
+.plan-form {
+display: flex;
+justify-content: space-around;
+margin-top: 0;
+}
+.plan p {
+  font-size:20px;
+  font-weight: bold;
+}
+.plan img:hover {
+  opacity: 1;
+}
+.plan img {
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.plan-contents {
+  display: flex;
+  justify-content: space-around;
+}
+.plan-contents p {
+  margin-left: 5px
+}
+
+
+/*sns関連、連携*/
+.acount {
+  position: fixed;
+  top: 470px;
+  left: 1400px;
+  padding: 10px;
+}
+#twitter:hover {
+  transform:scale(1.2);
+  transition-duration: 0.3s;
+}
+#facebook:hover {
+  transform:scale(1.2);
+  transition-duration: 0.3s;
+}
+#instagram:hover {
+  transform:scale(1.2);
+  transition-duration: 0.3s;
+}
+.acount img {
+  border-radius: 40px;
+  margin-top:10px;
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
+
+/*ボタン部分*/
+.project {
+  font-size: 30px;
+  font-family: cursive;
+  color:white;
+  font-weight: 700;
+  background: #7fffd4;
+  width: 300px;
+  margin: auto;
+  padding: 3px;
+  border-radius: 15px;
+  box-shadow: 0 4px #3cb371;
+  cursor: pointer;
+}
+.project:active {
+  position: relative;
+  top:4px;
+  box-shadow: none;
+}
+
+
+/*ブックマーク部分*/
+.bookmark {
+  position: fixed;
+  top:10px;
+  left:10px;
+  opacity: 0.5
+}
+
+/*どんなサークルを押した後の表示*/
+.after-btn {
+  width: 700px;
+  height: 650px;
+  padding: 30px;
+  background: aliceblue;
+  border-top:solid 4px #00bfff;
+  border-left: solid 4px #00bfff;
+  border-right: solid 4px #00bfff;
+  border-bottom: solid 4px #00bfff;
+  position: fixed;
+  top:10px;
+  left: 370px;
+  z-index: 3900;
+  text-align: center;
+  display: none;
+  font-size: 13px;
+  font-family: fantasy;
+
+}
+.after-btn-title {
+  font-size: 20px;
+}
+.close-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+}
+.image-one {
+  float: left;
+  margin-left: 120px;
+  margin-right: 60px
+}
+
+
+/*モーダル（背景の暗色化)*/
+.modal-overlay {
+  z-index: 1200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: rgba(0,0,0,0.75);
+  display: none;
+}
+
+
+/*ブックマークの中身*/
+.index {
+  border: solid 3px gray;
+  background: ;
+  width: 210px;
+  text-align: center;
+  border-radius: 20px;
+  position: fixed;
+  top:16px;
+  left: 70px;
+  display: none;
+  z-index: 3600;
+}
+.index p {
+  background: linear-gradient(transparent 70%,#f5deb3 70%);
+  width: 180px;
+  margin:8px auto;
+  color: gray;
+  cursor: pointer;
+}
+.index a {
+  text-decoration: none;
+}
+.close-batu {
+  color: gray;
+  font-size: 10px;
+  cursor: default;
+}
+.index p:hover {
+  color:red;
+}
+.close-batu:hover {
+  color: red;
+}
+
+/*部員紹介のスライド、全体部およびボタン部分*/
+.introduce-whole {
+  position: fixed;
+  top:40px;
+  left: 400px;
+  width: 700px;
+  height: 650px;
+  z-index: 3400;
+  border-radius: 20px;
+  display: none;
+  background-image: url("https://cdna.lystit.com/photos/yoox/baed84be/temperley-london-White-34-Length-Dress.jpeg");
+}
+.change-btn {
+  background: #4169e1;
+  color: white;
+  padding:5px 15px;
+  border-radius: 3px;
+}
+.change-btn:hover {
+  background: #0000cd;
+}
+.prev-btn {
+  position: relative;
+  top: 10px;
+  left: 30px;
+  display: inline-block;;
+}
+.next-btn {
+  position: fixed;
+  top:50px;
+  left:1030px;
+  display:inline-block;
+}
+#introduce-close {
+  position: absolute;
+  left: 630px;
+  top: 600px;
+  cursor: default;
+  background: gray;
+  font-weight: bold;
+  color: white;
+  padding: 2px 5px;
+  opacity:0.7;
+}
+#introduce-close:hover {
+  opacity:1;
+}
+/*切り替えスライド部*/
+#introduce-number {
+font-size: 30px;
+font-weight: bold;
+font-family: fantasy;
+position: relative;
+right:30px;
+margin-bottom: 20px;
+border-top:4px solid;
+border-bottom: 4px solid;
+width: 100px;
+margin-left: 50px;
+animation-name: number;
+animation-duration: 1s;
+animation-delay: 0;
+animation-fill-mode: forwards;
+}
+@keyframes  number {
+  0%{
+    width: 100px
+  }
+  100%{
+    width: 300px
+  }
+}
+#introduce-text {
+  padding: 50px;
+  background
+  position: relative;
+  right:40px;
+  margin-right: 60px;
+  margin-bottom: 0px;
+  border-top: 5px solid ;
+  border-bottom: 5px solid ;
+  animation-name: text;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes text {
+  0%{
+    padding: 0;
+  }
+  100% {
+    padding: 50px;
+  }
+}
+.introduce img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: 30px;
+  margin-top: 0;
+  border: 2px solid;
+  border-radius: 15px;
+}
+.introduce-index {
+  z-index: 3500;
+  width: 600px;
+  height: 550px;
+  position: fixed;
+  top:80px;
+  left: 430px;
+
+
+}
+.introduce {
+  display: none;
+  text-align:center;
+  width: 400px;
+  padding-left: 70px;
+  padding-bottom: 20px;
+  margin-left: 46px;
+
+}
+
+.active {
+    display: block;
+}
